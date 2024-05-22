@@ -1,0 +1,614 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --font-family: "Bebas Neue", sans-serif;
+  --cream-color: #fff0e3;
+  --black-color: #1e1c1a;
+  --button-color: #d99655;
+  font-size: 0.625rem;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--black-color);
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2 {
+  font-family: var(--font-family);
+  font-size: 5.6rem;
+  font-weight: 400;
+  line-height: 6rem;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  margin-bottom: 5rem;
+}
+
+a:hover {
+  color: var(--button-color);
+  transition: all 0.5s ease-in-out;
+}
+
+header {
+  background-color: var(--cream-color);
+  padding: 4rem 0rem;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  padding: 2.5em 4rem;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+}
+
+ul li {
+  border-right: 1px solid var(--black-color);
+  padding-right: 3rem;
+}
+
+ul li a {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 3rem;
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+ul li:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.hero-section {
+  background-color: var(--cream-color);
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-family: var(--font-family);
+  font-size: 7rem;
+  font-weight: 400;
+  line-height: 8.2rem;
+  text-align: center;
+  max-width: 97rem;
+  margin: auto;
+  padding-top: 8rem;
+}
+
+.hero-content a {
+  font-family: var(--font-family);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3rem;
+  letter-spacing: 0.05rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  list-style: none;
+  background-color: var(--button-color);
+  padding: 1.5rem 3rem;
+  color: white;
+  margin-top: 3rem;
+  margin-bottom: 8rem;
+  transition: all 0.5s ease;
+}
+
+.hero-content a:hover {
+  background-color: #ce843b;
+}
+
+.hero-img {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: end;
+}
+
+.collection {
+  padding-top: 14rem;
+  padding-bottom: 10rem;
+  border-bottom: 1px solid var(--black-color);
+}
+
+.collectionimg {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.collectioncontent {
+  position: relative;
+  overflow: hidden;
+}
+
+.collectioncontent a h2 {
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  font-size: 5rem;
+  color: var(--black-color);
+}
+
+.collectioncontent img {
+  transition: all 0.5s ease;
+}
+
+.collectioncontent img:hover {
+  transform: scale(1.05);
+}
+
+.newarivals {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.newarrivalswrapepr {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.newarivalsitem h4 {
+  font-family: var(--font-family);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3rem;
+}
+
+.newarivalsitem img {
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.newarivalsitem img:hover {
+  transform: scale(1.02);
+}
+
+.productlink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 0rem;
+}
+
+.producttitle h3 {
+  font-size: 2.7rem;
+  font-weight: 600;
+  line-height: 4rem;
+}
+
+.productcart a {
+  font-size: 2.5rem;
+  color: var(--black-color);
+  background-color: var(--cream-color);
+  border-radius: 100%;
+  display: inline-block;
+  width: 7rem;
+  height: 7rem;
+  text-align: center;
+  padding-top: 1.5rem;
+  transition: all 0.5s ease;
+}
+
+.productcart a:hover {
+  background-color: #1e1c1a;
+  color: #ce843b;
+}
+
+.newarivalsitem:hover {
+  border-bottom: 2px solid var(--button-color);
+}
+
+.limitoffersection {
+  background-color: var(--black-color);
+  color: white;
+  padding-top: 10rem;
+  overflow: hidden;
+}
+
+.limitofferheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12rem;
+}
+
+.limiteftcontent {
+  max-width: 45rem;
+}
+
+.limiteftcontent p {
+  margin-bottom: 0.5rem;
+}
+.limiteftcontent h3 {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  margin-bottom: 2rem;
+}
+
+.limitrightcontent a {
+  font-family: var(--font-family);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3rem;
+  letter-spacing: 0.05rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-color: var(--button-color);
+  padding: 1.5rem 3rem;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.limitrightcontent a:hover {
+  background-color: #ce843b;
+}
+
+.slider {
+  animation: slidein 30s linear infinite;
+  white-space: nowrap;
+  .logos {
+    width: 100%;
+    display: inline-block;
+    margin: 0px 1rem;
+    .fab {
+      padding: 0rem 2rem;
+      width: calc(100% / 5);
+      animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+    }
+  }
+}
+
+.brandssection {
+  padding: 12rem 0rem;
+}
+
+.brand-logo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+
+.blogsection {
+  background-color: var(--cream-color);
+  padding-top: 10rem;
+}
+
+.blogcontent p {
+  max-width: 97rem;
+  margin-bottom: 1.5rem;
+  color: #504c48;
+  font-size: 1.8rem;
+}
+
+.blogcontent a {
+  font-family: var(--font-family);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3rem;
+  letter-spacing: 0.05rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-color: var(--button-color);
+  padding: 1.5rem 3rem;
+  color: white;
+  transition: all 0.5s ease;
+  margin-top: 2rem;
+}
+
+.blogcontent a:hover {
+  background-color: #ce843b;
+}
+
+.blogimg {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  gap: 3em;
+  align-items: end;
+}
+
+.youtubeslider {
+  overflow: hidden;
+  padding: 5rem 0rem;
+  border-bottom: 1px solid var(--black-color);
+}
+
+.youtubecontent {
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+}
+.youtubecontent a {
+  display: inline-block;
+  display: flex;
+  align-items: self-end;
+  justify-content: center;
+  color: var(--black-color);
+  text-decoration: none;
+}
+
+.youtubecontent a img {
+  margin-right: 1.5rem;
+}
+
+.instagram-section {
+  padding: 12rem 0rem;
+}
+
+.instaheading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.instaheading p {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  color: #504c48;
+  margin-bottom: 0;
+}
+.instaheading h2 {
+  margin-bottom: 0;
+}
+
+.instapost {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  gap: 3rem;
+  margin-top: 6rem;
+}
+
+footer {
+  background-color: var(--black-color);
+  color: white;
+  padding-top: 10rem;
+}
+
+.footerlogo {
+  text-align: center;
+  color: #e9e9e9;
+  max-width: 58rem;
+  margin: auto;
+  margin-bottom: 12rem;
+}
+
+.footerlogo p {
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+.footerlink a {
+  color: #a2a2a2;
+  font-size: 1.8rem;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.footerlink span {
+  font-size: 1.8rem;
+  color: #a2a2a2;
+  padding: 0rem 1rem;
+}
+
+.footerlink a:hover {
+  color: var(--button-color);
+}
+
+.footeraddress1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 5rem;
+  border-bottom: 1px solid #a2a2a2;
+}
+
+.footeraddress1 p {
+  color: #a2a2a2;
+  margin: 0;
+  max-width: 18rem;
+}
+
+.footeraddress1 h2 {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  font-size: 4rem;
+  line-height: normal;
+  max-width: 55rem;
+  font-weight: 400;
+  line-height: 5.2rem;
+  letter-spacing: -0.02rem;
+}
+
+.footeraddress2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+
+.footeraddress2 p {
+  color: #a2a2a2;
+  margin: 0;
+  max-width: 18rem;
+}
+
+.footeraddress2 h2 {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  font-size: 4rem;
+  line-height: normal;
+  max-width: 55rem;
+  font-weight: 400;
+  line-height: 5.2rem;
+  letter-spacing: -0.02rem;
+}
+
+.footerlasttext p {
+  margin: 0;
+  color: #a2a2a2;
+  text-align: center;
+  border-top: 1px solid #a2a2a2;
+  padding: 2rem;
+}
+
+.mobile-menu {
+  display: none;
+}
+.mobile-menu a {
+  font-size: 3rem;
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+/* keyframes */
+
+@keyframes slidein {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1170px) {
+  .container {
+    padding: 0rem 1.5rem;
+  }
+
+  html {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 930px) {
+  .blogcontent a {
+    margin-bottom: 2rem;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .nav-left {
+    display: none;
+  }
+
+  .slider {
+    animation: slidein 30s linear infinite;
+    white-space: nowrap;
+    .logos {
+      width: 100%;
+      display: inline-block;
+      margin: 0px 0.2rem;
+      .fab {
+        padding: 0rem 1rem;
+        width: calc(100% / 3);
+        animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+      }
+    }
+  }
+
+  .youtubecontent a:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .collectionimg {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
+  .newarrivalswrapepr {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .limitofferheader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4rem;
+  }
+  .brand-logo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .youtubecontent a:first-child {
+    display: none;
+  }
+  .youtubecontent {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .instapost {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footeraddress1 {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footeraddress2 {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 350px) {
+  html {
+    font-size: 0.4rem;
+  }
+  .newarrivalswrapepr {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .instaheading {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+}
