@@ -13,6 +13,9 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+
+    <!-- aos animation link  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- header start  -->
@@ -50,17 +53,37 @@
       <!-- hero section start  -->
       <section class="hero-section">
         <div class="container">
-          <div class="hero-content">
+          <div class="hero-content" data-aos="zoom-in">
             <h1>Fashionable, quality, durable and best shoes for everyone</h1>
             <a href="#">Shop Now <i class="ri-arrow-right-line"></i></a>
           </div>
 
           <!-- hero image  -->
           <div class="hero-img">
-            <img src="images/shoe1.png" alt="Purple Shoe" />
-            <img src="images/shoe2.png" alt="Green Shoe" />
-            <img src="images/shoe3.png" alt="Yellow Shoe" />
-            <img src="images/shoe4.png" alt="Blue Shoe" />
+            <img
+              src="images/shoe1.png"
+              alt="Purple Shoe"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            />
+            <img
+              src="images/shoe2.png"
+              alt="Green Shoe"
+              data-aos="fade-up"
+              data-aos-duration="2500"
+            />
+            <img
+              src="images/shoe3.png"
+              alt="Yellow Shoe"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            />
+            <img
+              src="images/shoe4.png"
+              alt="Blue Shoe"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            />
           </div>
         </div>
       </section>
@@ -77,7 +100,11 @@
             </p>
           </div>
 
-          <div class="collectionimg">
+          <div
+            class="collectionimg"
+            data-aos="fade-up"
+            data-aos-duration="5000"
+          >
             <div class="collectioncontent">
               <a href="#">
                 <img src="images/man.png" alt="Man" />
@@ -107,7 +134,11 @@
           </div>
 
           <div class="newarrivalswrapepr">
-            <div class="newarivalsitem">
+            <div
+              class="newarivalsitem"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
               <h4>001</h4>
               <img src="images/shopcart03.png" alt="Athletic Shoe" />
               <div class="productlink">
@@ -120,7 +151,11 @@
                 </div>
               </div>
             </div>
-            <div class="newarivalsitem">
+            <div
+              class="newarivalsitem"
+              data-aos="fade-up"
+              data-aos-duration="2500"
+            >
               <h4>002</h4>
               <img src="images/shopcart02.png" alt="Athletic Shoe" />
               <div class="productlink">
@@ -133,7 +168,11 @@
                 </div>
               </div>
             </div>
-            <div class="newarivalsitem">
+            <div
+              class="newarivalsitem"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
               <h4>003</h4>
               <img src="images/shopcart01.png" alt="Athletic Shoe" />
               <div class="productlink">
@@ -221,10 +260,10 @@
           </div>
 
           <div class="brand-logo">
-            <img src="images/logo1.png" alt="Brand Logo" />
-            <img src="images/logo2.png" alt="Brand Logo" />
-            <img src="images/logo3.png" alt="Brand Logo" />
-            <img src="images/logo4.png" alt="Brand Logo" />
+            <img src="images/logo1.png" alt="Brand Logo" data-aos="fade-left" />
+            <img src="images/logo2.png" alt="Brand Logo" data-aos="fade-left" />
+            <img src="images/logo3.png" alt="Brand Logo" data-aos="fade-left" />
+            <img src="images/logo4.png" alt="Brand Logo" data-aos="fade-left" />
           </div>
         </div>
       </section>
@@ -289,10 +328,26 @@
         </div>
 
         <div class="instapost">
-          <img src="images/insta01.png" alt="Instagram Post" />
-          <img src="images/insta02.png" alt="Instagram Post" />
-          <img src="images/insta03.png" alt="Instagram Post" />
-          <img src="images/insta04.png" alt="Instagram Pos" />
+          <img
+            src="images/insta01.png"
+            alt="Instagram Post"
+            data-aos="fade-left"
+          />
+          <img
+            src="images/insta02.png"
+            alt="Instagram Post"
+            data-aos="fade-left"
+          />
+          <img
+            src="images/insta03.png"
+            alt="Instagram Post"
+            data-aos="fade-left"
+          />
+          <img
+            src="images/insta04.png"
+            alt="Instagram Pos"
+            data-aos="fade-left"
+          />
         </div>
       </section>
       <!-- instagram section end  -->
@@ -327,5 +382,13 @@
       </div>
     </footer>
     <!-- footer section end  -->
+
+    <!-- aos animation js  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+      });
+    </script>
   </body>
 </html>
